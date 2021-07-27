@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: url(background.jpg);
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Mukta', sans-serif;
+    min-height:  100vh;
+    min-width: 100vh;
+    
+}
+h1{
+    opacity: 0.8;
+    color: white;
+}
+
+header{
+    font-size: 2rem;
+    min-height: 20vh;
+}
+header, form , .todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white; 
+    outline: none;
+}
+
+.select{
+    margin:1.2rem 2.66rem ;
+    position:relative;
+    overflow: hidden;
+}
+select{
+
+    font-size: 1rem;
+    color: chocolate;
+    width: 9rem;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+form button{
+    color: chocolate;
+    background: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.del-button,
+.check-button{
+    padding:0.6rem;
+}
+form button:hover{
+    color: white;
+    background:  chocolate;
+}
+.todo-list{
+    min-width: 23%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color:black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.trash-btn, 
+.complete-btn{
+    border: none;
+    padding: 1rem;
+    color: chocolate;
+    background: white;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.4;
+}
+.trash-btn:hover, 
+.complete-btn:hover{
+    color: chocolate;
+    opacity: 1;
+}
+.completed li{
+    text-decoration: line-through;
+}
+.completed{
+    opacity: 0.8;
+}
+.fall{
+    transform: translateX(8rem);
+    opacity: 0;
+}
+li {
+    max-width: 100vh;
+    word-wrap: break-word;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

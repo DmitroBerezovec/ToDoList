@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDoList</title>
+    <link href = "styles.css" rel = "stylesheet" type = "text/css">
+    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header><h1>ToDoList</h1></header>
+    <form >
+        <button class="check-button">&#10003;&#10003;&#10003;</button>
+        <div class="select">
+        <select name="todos", class="filter-todo">
+                <option value="All" >All</option>
+                <option value="Done">Done</option>
+                <option value="Not done">Not done</option>
+        </select>
+    </div>
+        <button class="del-button">&#x1F5D1;</button>
+           
+    </form>
+    <form>
+        <input type = 'text', class = "text-input"> 
+        <button type = "submit", class = "add-button">+</button>
+    </form>
+    <div class="todo-container" >
+        <ul class="todo-list"></ul>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
